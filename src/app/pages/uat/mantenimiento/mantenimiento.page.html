@@ -1,0 +1,18 @@
+<app-header titulo="Mantenimiento"></app-header>
+
+<ion-content>
+
+  <ion-card *ngFor="let c of carreras"
+            [routerLink]="c.redirectTo">
+    <img [src]="c.img" />
+    <ion-card-header>
+      <ion-card-subtitle>{{ c.name }}</ion-card-subtitle>
+      <ion-card-title>{{ c.name }}</ion-card-title>
+    </ion-card-header>
+    <ion-card-content class="ion-text-end">
+      <ion-label>Mas info!</ion-label>
+      <ion-icon name="arrow-forward-outline"></ion-icon>
+    </ion-card-content>
+  </ion-card>
+  
+</ion-content>

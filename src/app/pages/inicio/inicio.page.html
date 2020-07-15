@@ -1,0 +1,81 @@
+<ion-header>
+  <ion-toolbar color="uttt">
+    <ion-buttons slot="start">
+      <ion-menu-button color="light" menu="first">
+      </ion-menu-button>
+    </ion-buttons>
+    <ion-buttons slot="end">
+      <ion-avatar>
+        <img src="/assets/logo.png">
+      </ion-avatar>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <h1 class="ion-text-center">Universidad Tecnologica de Tula-Tepeji</h1>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title class="ion-text-center">¿Quienes somos?</ion-card-title>
+    </ion-card-header>
+    <ion-img src="/assets/uttt1.jpg"></ion-img>
+    <ion-card-content class="ion-text-justify">
+      La Universidad Tecnológica de Tula-Tepeji es una de las tres instituciones pioneras del Sistema de Universidades Tecnológicas.<br>
+      Actualmente atiende en el plantel Tula-Tepeji y en sus Campus Chapulhuacán y Tepetitlán, ubicados en los municipios del mismo nombre.<br>
+    </ion-card-content>
+  </ion-card>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title class="ion-text-center">Oferta Educativa</ion-card-title>
+    </ion-card-header>
+    <ion-img src="/assets/uttt2.jpg"></ion-img>
+    <ion-card-content class="ion-text-justify">
+      Los alumnos reciben una educación integral, fomentando en ellos los valores universales, la sustentabilidad, el emprendimiento, la responsabilidad social, el desarrollo comunitario, las actividades culturales y deportivas, además de tutorías.<br>
+      El modelo educativo que imparte tiene un enfoque 70% práctico y un 30% teórico.
+    </ion-card-content>
+  </ion-card>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title class="ion-text-center">Lo nuevo!</ion-card-title>
+    </ion-card-header>
+    <ion-img src="/assets/uttt3.png"></ion-img>
+    <ion-card-content class="ion-text-justify">
+      A partir de enero 2020 imparte la Maestría en Gestión de Proyectos Estratégicos Sustentables, con lo cual fue la primera Universidad Tecnológica en el país que ofreció estudios de posgrado a nivel nacional. 
+    </ion-card-content>
+  </ion-card>
+
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+    <ion-fab-button color="danger">
+      <ion-icon name="add-outline"></ion-icon>
+    </ion-fab-button>
+    
+    <ion-fab-list side="top">
+  
+        <ion-fab-button color="twitter" href="https://twitter.com/UTTT_MX?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor">
+          <ion-icon name="logo-twitter"></ion-icon>
+        </ion-fab-button>
+  
+        <ion-fab-button color="instagram" href="https://www.instagram.com/uttt_mx/">
+          <ion-icon name="logo-instagram"></ion-icon>
+        </ion-fab-button>
+
+        <ion-fab-button routerLink="/Estudiante">
+          <ion-icon name="add-outline"></ion-icon>
+        </ion-fab-button>
+
+    </ion-fab-list>
+
+    <ion-fab-list side="start">
+
+      <ion-fab-button color="facebook" href="https://www.facebook.com/UTTulaTepejiMX/">
+        <ion-icon name="logo-facebook"></ion-icon>
+      </ion-fab-button>
+
+      <ion-fab-button color="uttt" href="http://www.uttt.edu.mx/">
+        <ion-icon name="school-outline"></ion-icon>
+      </ion-fab-button>
+
+  </ion-fab-list>
+  </ion-fab>
+
+</ion-content>

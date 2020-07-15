@@ -1,0 +1,27 @@
+[
+    {
+    "icon": "library-outline",
+    "name": "UTTT",
+    "redirectTo": "/uttt"
+    },
+    {
+      "icon": "library-outline",
+      "name": "UAT",
+      "redirectTo": "/uat"
+    },
+    {
+      "icon": "library-outline",
+      "name": "UAC",
+      "redirectTo": "/uac"
+    },
+    {
+      "icon": "desktop-outline",
+      "name": "Mixto-Virtual",
+      "redirectTo": "/mv"
+    },
+    {
+      "icon": "school-outline",
+      "name": "Maestrias",
+      "redirectTo": "/maestrias"
+    }
+  ]

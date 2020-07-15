@@ -1,0 +1,57 @@
+<app-header titulo="Registro"></app-header>
+
+<ion-content padding class="background">
+<ion-item color="transparent">
+  <ion-label position="stacked">Nombre(s):</ion-label>
+  <ion-input [(ngModel)]="persona.nombre"></ion-input>
+</ion-item>
+<ion-item color="transparent">
+  <ion-label position="stacked">Apellidos:</ion-label>
+  <ion-input [(ngModel)]="persona.apellidos"></ion-input>
+</ion-item>
+<ion-item color="transparent">
+  <ion-label position="stacked">Correo:</ion-label>
+  <ion-input [(ngModel)]="persona.correo"></ion-input>
+</ion-item>
+<ion-item color="transparent">
+  <ion-label position="stacked">Telefono:</ion-label>
+  <ion-input [(ngModel)]="persona.telefono"></ion-input>
+</ion-item>
+<ion-item color="transparent">
+  <ion-label position="stacked">Carreras</ion-label>
+  <ion-select [(ngModel)]="persona.carrera" value="Seleccionar">
+    <ion-select-option  value="tics">Tenologias de la Informacion</ion-select-option>
+    <ion-select-option value="Mecatronica">Mecatronica</ion-select-option>
+    <ion-select-option value="DesarolloNegocios">Desarrollo de Negocios</ion-select-option>
+    <ion-select-option value="EnergiasRenovables">Energias Renovables</ion-select-option>
+    <ion-select-option value="Quimica">Quimica</ion-select-option>
+    <ion-select-option value="Mantenimiento">Mantenimiento</ion-select-option>
+    <ion-select-option value="ProcesosIndustriales">Procesos Industriales</ion-select-option>
+  </ion-select>
+</ion-item>
+</ion-content>
+
+<ion-footer *ngIf="!persona.id">
+  <ion-toolbar color="uttt">
+    <ion-button expand="full" fill="clear" color="light" (click)="add()">
+      Enviar
+    </ion-button>
+  </ion-toolbar>
+</ion-footer>
+
+<!-- <ion-footer *ngIf="persona.id">
+  <ion-row no-padding text-center>
+    <ion-col size="6">
+      <ion-button expand="block" fill="outline" color="danger" (click)="delete()">
+        <ion-icon name="trash" slot="start"></ion-icon>
+        Eliminar
+      </ion-button>
+    </ion-col>
+    <ion-col size="6">
+      <ion-button expand="block" fill="outline" color="danger" (click)="update()">
+        <ion-icon name="trash" slot="start"></ion-icon>
+        Editar
+      </ion-button>
+    </ion-col>
+  </ion-row>
+</ion-footer> -->

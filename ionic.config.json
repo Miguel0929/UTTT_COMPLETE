@@ -1,0 +1,8 @@
+{
+  "name": "AppUTTT",
+  "integrations": {
+    "capacitor": {},
+    "cordova": {}
+  },
+  "type": "angular"
+}
